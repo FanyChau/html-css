@@ -12,42 +12,32 @@
 
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
-        }
-
-        tr.linha2{
-            background-color: rgba(255, 0, 0, 0.795);
-        }
-        tr.linha1{
-            background-color: rgba(0, 0, 255, 0.705);
-        }
-
-        tr.linha3{
-            background-color: rgba(0, 128, 0, 0.705);
-        }
-
-        tr.linha4{
-            background-color: rgba(255, 255, 0, 0.753);
         }
 
         td{
             border: 1px solid black;
             padding: 8px;
-            text-align: center;
+            text-align: center; /* Alinhamento horizontal*/
+            vertical-align: middle; /* Alinhamento Vertical*/
         }
 
-        td.dado{
-            background-color: gray;
-        }
+      .Numero{
+          text-align: right;
+      }
+
+      
+
     </style>
 </head>
 <body>
     <h1>Minha Primeira Tabela em html</h1>
     <table> <!--Tabela-->
         <tr class="linha1"> <!--Primeira linha-->
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
+            <td class="Numero">A1</td>
+            <td class="Numero">B1</td>
+            <td class="Numero">C1</td>
         </tr>
         <tr class="linha2"> <!--Segunda linha-->
             <td>A2</td>
