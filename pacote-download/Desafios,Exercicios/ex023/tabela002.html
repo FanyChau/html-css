@@ -28,6 +28,17 @@
         .num{
             text-align: right;
         }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -43,10 +54,11 @@
                 TR,TD,TH
     -->
     <table>
+        <caption>Populacao das Unidades Ferderativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populacao</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 90px;">Populacao</th>
             </tr>
         </thead>
         <tbody>
@@ -67,7 +79,7 @@
             
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num">210 147 125</td>
         </tfoot>
     </table>
