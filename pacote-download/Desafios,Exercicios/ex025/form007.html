@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+   <h1>Exemplo de formulario </h1> 
+   <form action="cadastro.php" method="post" autocomplete="on">
+    <div id="Estados">
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest"> 
+            <option value="" selected>--- Escolha ---</option>
+            <optgroup label="Sul">
+               
+                <option value="MP">Maputo</option>
+                <option value="GZ">Gaza</option>
+                <option value="IN">Inhembane</option>
+            </optgroup>
+
+            <optgroup label="Centro">
+                <option value="SF">Sofala</option>
+                <option value="MC">Manica</option>
+                <option value="TT">TeTe</option>
+            </optgroup>
+
+            <optgroup label="Norte">
+                <option value="ZB">Zambezia</option>
+                <option value="NP">Nampula</option>
+                <option value="NA">Niassa</option>
+                <option value="CB">Cabo Delgado</option>
+            </optgroup>
+        </select>
+    </div>
+    <p>
+        <label for="iprof">Profissao:</label>
+        <input type="text" name="prof" id="iprof" list="lsprof"> 
+        <datalist id="lsprof" >
+            <option value="CONT">Contabilista</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="JUR">Jurista</option>
+            <option value="PROF">Professor</option>
+        </datalist>
+    </p>
+
+    <p>
+        <label for="imsg">Mensagem: </label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    </p>
+
+     <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+   </form>
+</body>
+</html>
